@@ -62,19 +62,19 @@ module tb_spi_master ();
         @(posedge clk);
 
         spi_set_mode(0);
-        spi_send_data(8'haa);
+        spi_send_data(8'h55);
 
         spi_set_mode(1);
-        spi_send_data(8'haa);
+        spi_send_data(8'h55);
 
         spi_set_mode(2);
-        spi_send_data(8'haa);
+        spi_send_data(8'h55);
 
         spi_set_mode(3);
-        spi_send_data(8'haa);
+        spi_send_data(8'h55);
 
         @(posedge clk);
-        #20;
+        #100;
         $finish;
     end
 

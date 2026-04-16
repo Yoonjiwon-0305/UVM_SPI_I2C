@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_i2c_master_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_i2c_master" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="300194262fs"></ZoomEndTime>
+      <Cursor1Time time="640700323fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="119"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/tb_i2c_master/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c_master/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c_master/cmd_start" type="logic">
+      <obj_property name="ElementShortName">cmd_start</obj_property>
+      <obj_property name="ObjectShortName">cmd_start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c_master/cmd_write" type="logic">
+      <obj_property name="ElementShortName">cmd_write</obj_property>
+      <obj_property name="ObjectShortName">cmd_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c_master/cmd_read" type="logic">
+      <obj_property name="ElementShortName">cmd_read</obj_property>
+      <obj_property name="ObjectShortName">cmd_read</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c_master/cmd_stop" type="logic">
+      <obj_property name="ElementShortName">cmd_stop</obj_property>
+      <obj_property name="ObjectShortName">cmd_stop</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c_master/tx_data" type="array">
+      <obj_property name="ElementShortName">tx_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c_master/ack_in" type="logic">
+      <obj_property name="ElementShortName">ack_in</obj_property>
+      <obj_property name="ObjectShortName">ack_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c_master/rx_data" type="array">
+      <obj_property name="ElementShortName">rx_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c_master/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c_master/ack_out" type="logic">
+      <obj_property name="ElementShortName">ack_out</obj_property>
+      <obj_property name="ObjectShortName">ack_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c_master/busy" type="logic">
+      <obj_property name="ElementShortName">busy</obj_property>
+      <obj_property name="ObjectShortName">busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c_master/sda" type="logic">
+      <obj_property name="ElementShortName">sda</obj_property>
+      <obj_property name="ObjectShortName">sda</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c_master/scl" type="logic">
+      <obj_property name="ElementShortName">scl</obj_property>
+      <obj_property name="ObjectShortName">scl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c_master/SLA" type="array">
+      <obj_property name="ElementShortName">SLA[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SLA[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c_master/dut/U_MASTER/step" type="array">
+      <obj_property name="ElementShortName">step[1:0]</obj_property>
+      <obj_property name="ObjectShortName">step[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c_master/dut/U_MASTER/state" type="array">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+   </wvobject>
+</wave_config>
