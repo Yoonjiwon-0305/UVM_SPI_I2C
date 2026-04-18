@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1776321536">
-  <File Type="PA-TCL" Name="i2c_demo_top.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="i2c_demo_top_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="i2c_demo_top_reports.tcl"/>
-  <File Type="RDS-RDS" Name="i2c_demo_top.vds"/>
-  <File Type="RDS-UTIL" Name="i2c_demo_top_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="i2c_demo_top_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="i2c_demo_top.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="i2c_demo_top_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="i2c_demo_top_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1776417610">
+  <File Type="PA-TCL" Name="demo_i2c_master.tcl"/>
+  <File Type="REPORTS-TCL" Name="demo_i2c_master_reports.tcl"/>
+  <File Type="RDS-RDS" Name="demo_i2c_master.vds"/>
+  <File Type="RDS-UTIL" Name="demo_i2c_master_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="demo_i2c_master_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="demo_i2c_master.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/fnd_controller.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/i2c_master.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -18,8 +22,40 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/demo_master.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/I2C_slave.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/demo_i2c.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/I2C_top.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/i2c_demo_top.sv">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -27,8 +63,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="i2c_demo_top"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="TopModule" Val="demo_i2c_master"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
